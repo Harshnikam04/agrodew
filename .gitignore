@@ -1,0 +1,20 @@
+# Environment variables & secrets
+.env
+.env.*
+firebase-key.json
+
+# Node modules
+node_modules/
+npm-debug.log*
+
+# Expo / React Native
+.expo/
+dist/
+web-build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+*.log
