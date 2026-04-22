@@ -10,7 +10,7 @@ import DashboardScreen from './src/screens/DashboardScreen';
 import RelayControlScreen from './src/screens/RelayControlScreen';
 import AIChatScreen from './src/screens/AIChatScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { Ionicons } from '@expo/vector-icons';
 import { ActivityIndicator, View, StatusBar } from 'react-native';
 
 const Stack = createStackNavigator();
@@ -23,10 +23,10 @@ function MainTabs() {
         tabBarIcon: ({ color, size }) => {
           let iconName;
           if (route.name === 'Home') iconName = 'home';
-          else if (route.name === 'Relays') iconName = 'toggle-switch';
-          else if (route.name === 'AI Assistant') iconName = 'robot';
-          else if (route.name === 'Profile') iconName = 'account';
-          return <Icon name={iconName} size={size} color={color} />;
+          else if (route.name === 'Relays') iconName = 'toggle';
+          else if (route.name === 'AI Assistant') iconName = 'chatbubble-ellipses';
+          else if (route.name === 'Profile') iconName = 'person';
+          return <Ionicons name={iconName} size={size} color={color} />;
         },
         tabBarActiveTintColor: '#4CAF50',
         tabBarInactiveTintColor: 'gray',
